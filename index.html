@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>stetup's Dev Hub</title>
+  <title>stetupdev's Projects</title>
   <style>
     * {
       margin: 0;
@@ -12,57 +12,76 @@
     }
 
     body {
-      background: url('https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
-      background-size: cover;
-      height: 100vh;
+      background: linear-gradient(135deg, #1e1e1e, #121212);
+      color: #eee;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      color: #eee;
-    }
-
-    .container {
-      background: rgba(20, 20, 20, 0.7);
-      border-radius: 16px;
-      padding: 30px 40px;
-      max-width: 600px;
-      width: 90%;
-      backdrop-filter: blur(12px);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+      min-height: 100vh;
+      text-align: center;
+      padding: 40px 20px;
     }
 
     h1 {
-      font-size: 2.4rem;
-      margin-bottom: 20px;
-      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 30px;
       color: #4fc3f7;
     }
 
-    p {
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 12px;
+    .project-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      max-width: 400px;
     }
 
-    a {
-      color: #80d8ff;
+    a.project-link {
+      display: block;
+      padding: 16px;
+      background: rgba(40, 40, 40, 0.85);
+      border-radius: 12px;
       text-decoration: none;
+      color: #eee;
+      font-size: 1.2rem;
       transition: 0.2s ease;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
     }
 
-    a:hover {
+    a.project-link:hover {
+      background: #4fc3f7;
+      color: #121212;
+    }
+
+    p.footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    a.footer-link {
+      color: #888;
+      text-decoration: none;
+    }
+
+    a.footer-link:hover {
       text-decoration: underline;
-      color: #4fc3f7;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>stetup's Dev Hub</h1>
-    <p>Welcome to my personal dev space — a chill, dark-mode setup for coding, project notes, and resources.</p>
-    <p>🔗 <a href="https://github.com/stetupdev" target="_blank">My GitHub: @stetupdev</a></p>
-    <p>📂 <a href="#">Latest Project</a></p>
-    <p>📖 <a href="#">Docs</a> | 🎛️ <a href="#">Tools</a> | 🗂️ <a href="#">More</a></p>
+  <h1>stetupdev's Projects</h1>
+
+  <div class="project-list">
+    <a href="/mistakebot/" class="project-link">🤖 Mistake Bot</a>
+    <!-- Add more projects here -->
+    <a href="/all-bots/" class="project-link">🤖 All Bots</a>
   </div>
+
+  <p class="footer">
+    Made by <a href="https://github.com/stetupdev" class="footer-link" target="_blank">stetupdev</a>
+  </p>
 </body>
 </html>
