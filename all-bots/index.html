@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>stetupdev's Bots</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1e1e1e, #121212);
+      color: #eee;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+      color: #81d4fa;
+    }
+
+    .bot-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    a.bot-link {
+      display: block;
+      padding: 16px;
+      background: rgba(40, 40, 40, 0.85);
+      border-radius: 12px;
+      text-decoration: none;
+      color: #eee;
+      font-size: 1.2rem;
+      transition: 0.2s ease;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+    }
+
+    a.bot-link:hover {
+      background: #81d4fa;
+      color: #121212;
+    }
+
+    p.footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    a.footer-link {
+      color: #888;
+      text-decoration: none;
+    }
+
+    a.footer-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>stetup's Bots</h1>
+
+  <div class="bot-list">
+    <a href="/mistakebot/" class="bot-link">🤖 Mistake Bot</a>
+    <!-- Future bots go here -->
+    <!-- <a href="/anotherbot/" class="bot-link">⚙️ Another Bot</a> -->
+  </div>
+
+  <p class="footer">
+    Back to <a href="/" class="footer-link">Home</a>
+  </p>
+</body>
+</html>
